@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--js-->
+<script src="js/main.js"></script>
+<!--css-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+<body>
+  <div class="uk-preserve-color">
+
+      <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+
+          <nav class="uk-navbar-container">
+              <div class="uk-container uk-container-expand">
+                  <div uk-navbar>
+                    <div class="uk-navbar-right">
+                      <ul class="uk-navbar-nav">
+                          <li>
+                              <a href="#">Work</a>
+                              <div class="uk-navbar-dropdown">
+                                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header">Kiddom</li>
+                                    <li><a href="#">For Families</a></li>
+                                    <li><a href="#">Sign-Up</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Cricduel</a></li>
+                                    <li><a href="#">NexTravel</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  <!--header-->
+  <a uk-totop uk-scroll class="uk-position-fixed uk-position-bottom-right"></a>
+  <div uk-parallax="opacity: 1,0; viewport: .5;" class="uk-section">
+    <div class="uk-container uk-container-small uk-text-center uk-flex uk-flex-middle" id="header" uk-height-viewport="offset-top: true; offset-bottom: 15">
+      <div>
+        <img class="profile" src="assets/images/hs.png">
+  			<h1>Dennis Chung</h1>
+  			<p class="uk-text-large">I am a Product Designer with expertise in visual design and engineering. With a background as a web engineer, I understand how to optimize the product development process by leveraging and clarifying constraints. My design process is rooted in building efficient and visually interesting experiences that solve core user problems.</p>
+        <a href="#section-1" class="scroll" uk-scroll="offset: 64;"></a>
+			</div>
+		</div>
+  </div>
+  <!--Kiddom for families-->
+  <div uk-parallax="opacity: 0,1; viewport: 0.5;" class="uk-section uk-flex uk-flex-middle box-section" id="section-1">
+    <div class="uk-container uk-container-small">
+      <div class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@m">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5;" src="https://getuikit.com/docs/images/light.jpg" alt="Image">
+        </div>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5;" class="uk-width-1-2@m uk-flex-first@m uk-flex-center uk-flex-left@s">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
+          <p>CricDuel’s app had begun to gain massive traction in the world of cricket fantasy sports. We enhanced the existing core product and designed new and exciting features.</p>
+          <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Kiddom consolidated sign-up-->
+  <div class="uk-section uk-flex uk-flex-middle box-section">
+    <div class="uk-container uk-container-small">
+      <div class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@m">
+            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image">
+        </div>
+        <div class="uk-width-1-2@m">
+            <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
+            <p>Over the last 3 years the NexTravel product has grown organically based on customer requests and feedback. Our team was tasked to redesign the information architecture and site navigation.</p>
+            <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cricduel-->
+  <div class="uk-section uk-flex uk-flex-middle box-section">
+    <div class="uk-container uk-container-small">
+      <div class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@m">
+            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image">
+        </div>
+        <div class="uk-width-1-2@m uk-flex-first@m">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+          <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Next-travel-->
+  <div class="uk-section uk-flex uk-flex-middle box-section">
+    <div class="uk-container uk-container-small">
+      <div class="uk-flex-middle " uk-grid>
+        <div class="uk-width-1-2@m">
+            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image">
+        </div>
+        <div class="uk-width-1-2@m">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+          <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="uk-section uk-section-small">
+  			<div class="uk-container">
+  				<p class="uk-text-small uk-text-center">Copyright 2019 - Created by Dennis | Built with <a href="http://getuikit.com" title="" target="_blank" data-uk-tooltip="" aria-expanded="false"><span data-uk-icon="uikit" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="uikit"><polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon><polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg></span></a> </p>
+  			</div>
+	</footer>
+</body>
+</html>
