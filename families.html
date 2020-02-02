@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--js-->
+<script src="js/main.js"></script>
+<!--css-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<style>
+  .section-1{
+    height: 450px;
+  }
+  #dc-color{
+    background-color: #FFE88B;
+  }
+  .problem-sec{
+    background-color: #064781;
+    color: white;
+  }
+  .problem-sec li{
+    font-size: 1.5rem;
+    line-height: 1.95;
+  }
+  .annotate-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+  }
+  #one-box{
+    border: 2px solid rgb(135, 115, 255);
+    color: rgb(135, 115, 255);
+  }
+  #two-box{
+    background-color: rgb(56, 180, 252);
+  }
+  #three-box{
+    background-color: rgb(207, 15, 104);
+  }
+  #four-box{
+    background-color: rgb(47, 198, 2);
+  }
+
+  #my-logo h3{
+    pointer-events: none;
+    margin-top: 0px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="uk-preserve-color">
+      <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+          <nav class="uk-navbar-container">
+              <div class="uk-container uk-container-medium">
+                  <div uk-navbar>
+                    <div class="uk-navbar-left">
+                      <ul class="uk-navbar-nav">
+                        <li id="my-logo">
+                          <a href="./index.html">
+                            <svg uk-parallax="stroke: 100%; viewport: .05;" width="60" height="60" style="position: absolute; stroke-dasharray: 0; stroke-dashoffset: 0;">
+                            <rect width="35" height="35" x="10" y="13" style="fill:rgb(0,0,0,0);stroke-width:2;stroke:rgb(0,0,0); z-index: -1; pointer-events: none;"></rect>
+                            </svg>
+                            <h3 class="uk-margin-remove-bottom">D.</h3>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+  <!--header-->
+  <a uk-totop uk-scroll class="uk-position-fixed uk-position-bottom-right"></a>
+
+  <div class="uk-section" id="dc-color">
+    <div class="uk-container uk-text-center uk-container-small">
+        <h1>Kiddom for Families</h1>
+        <div class="uk-container">
+          <p class="uk-text-large uk-text-light">At Kiddom, our mission is to enable teachers and learners. We sought to extend our services by providing parents a view into their child’s progress in their classes.</p>
+        </div>
+    </div>
+    <div class="uk-container uk-flex">
+      <div class="uk-container">
+        <img src="assets/images/family/family-Header.png">
+      </div>
+    </div>
+  </div>
+  <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <div class="uk-grid uk-grid-stack" uk-grid="">
+            <div class="uk-width-2-3@m uk-padding uk-padding-remove-top">
+              <h3>Overview</h3>
+              <p>As such we want to help students and teachers by providing family members (guardians, parents, etc.) ongoing views into student progress. Kiddom for Families V1 is our first MVP to accomplish this goal. There is extensive research to support the premise that student outcomes are improved through support at home. As such enabling access to student performance for families supports this.</p>
+            </div>
+            <div class="uk-width-1-3@m uk-first-column">
+              <h4>Team:</h4>
+              <p>Product Manager - Jordan Feldstien<br>iOS - James Wagner, Raheel Ahmad<br>Android - Wit Kurowski, Alex Kong</p>
+              <h4>Research:</h4>
+              <p>Amanda, Abbas, and Ahsan</p>
+              <h4>My Role:</h4>
+              <p>UI/UX Designer</p>
+            </div>
+        </div>
+    </div>
+  </div>
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-1-2@m">
+                <h3>Research:</h3>
+                <p>Multiple Schools who were using Kiddom and also potential clients expressed an interest in a parent and student portal. Kiddom chose to do a study at Marshall County school where we talked to parents, teachers, and students.</p>
+                <p>We wanted to research this implementation and explore broader themes of communication between school and home from teachers, students and parents.</p>
+            </div>
+            <div class="uk-width-1-2@m uk-flex-first">
+              <div uk-lightbox>
+                  <a href="assets/images/family/teacher-session.png"><img src="assets/images/family/teacher-session.png"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-section">
+        <div class="uk-container uk-container-small">
+          <div class="uk-flex-middle" uk-grid>
+              <div class="uk-width-1-2@m">
+                <h3>Research Session takeaways:</h3>
+                  <ul>
+                    <li>Quickly understand how their child is doing.</li>
+                    <li>Providing information in a timely matter to the parent.</li>
+                    <li>Parents wanted to see what assignments their children are working on. How they are progressing and where they’ll need extra help.</li>
+                  </ul>
+              </div>
+              <div class="uk-width-1-2@m uk-flex-first">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+                    <ul class="uk-slider-items uk-child-width-1-1">
+                        <li>
+                            <img src="assets/images/family/teacher-session-notes-1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/images/family/teacher-session-notes-2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/images/family/teacher-session-notes-3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/images/family/teacher-session-notes-4.png" alt="">
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <h3>Task Flows for a first-time parent</h3>
+        <ul>
+          <li>The initial email a Parent receives to claim their account</li>
+          <li>The reset password-type flow for claiming and account setup</li>
+          <li>The view to select a child</li>
+          <li>The child's classroom view</li>
+        </ul>
+        <img src="assets/images/family/flow-signup.png">
+
+        <h3>Flow of inside of a family view</h3>
+        <p>From the research session at Marshall County, we decided on a rough MVP that would provide a view for multiple students, multiple classes and can toggle between a Reports view and Timeline view.</p>
+        <img src="assets/images/family/flow-family.png">
+      </div>
+    </div>
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-2-3@m">
+                <h3>Quick and Easy</h3>
+                <p>We wanted to focus on class assignments because our core product revolves around teachers assigning content to students. Unpacking per-standard mastery is likely over parents' heads, so we needed to find a way to make it easy to digest and understand how their child was doing.</p>
+                <p>We came up with a home screen that will have show a list of the parents children, classes they are in, and a short summary of their progress. We knew that parents would want to quickly see how their child was doing from the research sessions.</p>
+            </div>
+            <div class="uk-width-1-3@m uk-flex-first">
+              <div uk-lightbox>
+                  <a href="assets/images/family/concept-family-home.png"><img class="uk-box-shadow-large" src="assets/images/family/concept-family-home.png"></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <h3>Cross assignment filtering</h3>
+        <p>We also planned to display assignments by classes and by Upcoming, Overdue and Recent. Parents would want to filter their childs assignments by urgency (what’s due? Where does my child need help the most? ..etc)</p>
+        <img src="assets/images/family/family-original-student-flow.png">
+      </div>
+    </div>
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-1-3@m">
+              <h3>View Only</h3>
+              <p>We also recieved feedback from teachers about showing too much information to the parents (EXPLAIN!). By only allowing the parent to see the assignment and the childs progress.</p>
+            </div>
+            <div class="uk-width-2-3@m uk-flex-first">
+              <img src="assets/images/family/assignment-view-only.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-section">
+        <div class="uk-container uk-container-small">
+          <div class="uk-flex-middle uk-flex-center">
+            <h3 class="uk-text-center">Challenges</h3>
+            <p>Time Constraints, We wanted to get this out before schools went on winter break, so we moved very quickly. Since school admins needed an onboarding process for parents, we would have required even more time before the release. Had to sacrifice user testing and Research time was cut.</p>
+          </div>
+        </div>
+        <div class="uk-container uk-container-small">
+          <div class="uk-flex-middle" uk-grid>
+              <div class="uk-width-2-3@m">
+                <h3>Loading Problems</h3>
+                <p>We actually encountered a technical constraint pitfall during development. Since this was a stand-alone feature of the product we were in uncharted territory. Initially, we wanted to have a combined view of all the classes and assignments a student had.</p>
+                <p>However, the way our backend data was built made it very difficult to see assignments from multiple classes in one view. It would take around 30 seconds - 1 minute for data to load. Given the tight timeline, we decided to pivot to a single class view.</p>
+              </div>
+              <div class="uk-width-1-3@m">
+                <div uk-lightbox>
+                    <a href="assets/images/family/nope-student_classes_overview_2.png"><img class="uk-box-shadow-large" src="assets/images/family/nope-student_classes_overview_2.png"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+        <div class="uk-section">
+          <div class="uk-container uk-container-small">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-2-3@m">
+                    <h3>Compromise</h3>
+                    <p>No longer designing an aggregate view of class assignments based off status, I wanted to still focus on creating an experience for the parent to easily understand their childs progress at a glance. I added the # of overdue and upcoming attributes in the class card on the home screen.</p>
+                </div>
+                <div class="uk-width-1-3@m uk-flex-first">
+                  <div uk-lightbox>
+                      <a href="assets/images/family-home.png"><img class="uk-box-shadow-large" src="assets/images/family-home.png"></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section">
+          <div class="uk-container uk-container-medium">
+            <h3>Segment Navigation</h3>
+            <img src="assets/images/family/family-overview-explaination.png">
+          </div>
+        </div>
+
+        <div class="uk-section uk-padding-remove-top">
+          <div class="uk-container uk-container-small">
+              <ol>
+                <li>I wanted to show the parent an intuitive view of the childs progress. 3 main components: The childs grade over a range of time, Progression (delta of current grade and grade 2 weeks ago) from the last 2 weeks, and graph to help visualize progress.</li>
+              </ol>
+              <div class="uk-flex uk-flex-left">
+                <div class="annotate-box uk-flex uk-flex-middle uk-flex-center" id="two-box">2</div>
+                <div><p>Since we could not support an aggregate view of assignment status', I designed a segment view so that the parent can easily navigate each category.</p></div>
+              </div>
+              <div class="uk-flex uk-flex-left">
+                <div class="annotate-box uk-flex uk-flex-middle uk-flex-center" id="three-box">3</div>
+                <div><p>Kiddom supports multiple grading types that might confuse parents. By providing an informational <a href="https://support.kiddom.co/en/articles/434945-how-are-grades-calculated">link</a> that will educate what their childs grade means.</p></div>
+              </div>
+              <div class="uk-flex uk-flex-left">
+                <div class="annotate-box uk-flex uk-flex-middle uk-flex-center" id="four-box">4</div>
+                <div><p>Another signal to help the parent see that their child needs help in a class is the notification badge for overdue assignments.</p></div>
+              </div>
+          </div>
+      </div>
+            <!--
+            <p>Also not solving the research problem of helping parents understanding different types of grading
+            Since the iOS and Android teams were on different sprint cycles and our kickoff coincided with the beginning of iOS’s we decided to design for iOS first.  Android then had to translate my designs the best they could. If they ran into any problems I would get pulled in to help. Here’s a design of androids overview screen.
+            </p>
+            <img src="assets/images/family/Android-Overview.png"> -->
+        <div class="uk-section">
+          <div class="uk-container uk-container-small">
+            <h3>Final V1 Screens</h3>
+            <div uk-slider>
+              <div class="uk-position-relative">
+                  <div class="uk-slider-container uk-light">
+                      <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-1-1@m">
+                          <li>
+                              <img src="assets/images/family/slider-email-flow.png" alt="">
+                          </li>
+                          <li>
+                              <img src="assets/images/family/slider-login.png" alt="">
+                          </li>
+                          <li>
+                              <img src="assets/images/family/slider-home-overview.png" alt="">
+                          </li>
+                          <li>
+                            <div uk-lightbox>
+                                <img src="assets/images/family/slider-assignments.png" alt="">
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="uk-hidden@s uk-light">
+                      <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                      <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+                  <div class="uk-visible@s">
+                      <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                      <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+              </div>
+              <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          </div>
+        </div>
+      </div>
+
+
+
+          <!-- <p>Assignment in classroom</p> -->
+
+          <div class="uk-section">
+            <div class="uk-container uk-container-small">
+              <div class="uk-flex-middle" uk-grid>
+                  <div class="uk-width-1-2@m">
+                      <h3>User testing research</h3>
+                      <p>So users were able to achieve the tasks with ease. Some small minor confusion with our existing classroom UI. I documented the painpoints for the core product designer to review.</p>
+                      <ol>
+                        <li>2/5 users could not see the score of the assignment. 3/5 users did not know if the date was for when the assignment was due or assigned.</li>
+                        <li>4/5 users were confused about what the weeks discriptor referred to.</li>
+                        <li>3/5...</li>
+                      </ol>
+                  </div>
+                  <div class="uk-width-1-2@m uk-flex-first">
+                    <div uk-lightbox>
+                        <a href="assets/images/family/user-testing-results.png"><img src="assets/images/family/user-testing-results.png"></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-section">
+            <div class="uk-container uk-container-small">
+              <h3>Conclusion</h3>
+              <p>This project was one of my favorites to work on at Kiddom. Since this was a stand-alone feature (separate from the teacher and student experience) I was able to create something new and push our apps design boundaries. Things like: </p>
+                <ul>
+                  <li>How a parent would want to best navigate and view their children’s assignments</li>
+                  <li>Creating a new intuitive way for parents to understand their childs grade.</li>
+                </ul>
+              <p>Some things planned for our future releases:</p>
+              <ul>
+                <li>Fix our backend architecture so that student data would load quicker.</li>
+                <li>Clearer visual language to understand a complex idea of Mastery.</li>
+                <li>Teacher Parent communication </li>
+                <li>Detailed behavioral/social progress. Note-taking and reporting etc.</li>
+              </ul>
+            </div>
+            <div class="uk-container uk-container-small uk-flex uk-flex-center">
+              <img src="assets/images/family/no-overdue.gif">
+            </div>
+          </div>
+  <!--footer-->
+  <footer class="uk-section uk-section-small">
+  			<div class="uk-container">
+  				<p class="uk-text-small uk-text-center">Copyright 2019 - Created by Dennis | Built with <a href="http://getuikit.com" title="" target="_blank" data-uk-tooltip="" aria-expanded="false"><span data-uk-icon="uikit" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="uikit"><polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon><polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg></span></a> </p>
+  			</div>
+	</footer>
+</body>
+</html>
