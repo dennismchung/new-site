@@ -13,6 +13,11 @@
   pointer-events: none;
   margin-top: 0px;
 }
+#section-1{
+  /* background-image: radial-gradient(white, #FFE88B); */
+}
+#section-2{
+}
 </style>
 </head>
 <body>
@@ -38,10 +43,9 @@
           </nav>
       </div>
   </div>
-  
   <!--header-->
-  <a uk-totop uk-scroll uk-parallax="opacity: 0,1; viewport: .05;" class="uk-position-fixed uk-position-bottom-right uk-margin-bottom uk-margin-right"></a>
-  <div uk-parallax="opacity: 1,0; viewport: .5;" class="uk-section">
+  <a uk-totop uk-scroll uk-parallax="opacity: 0,1; viewport: .05; media: @s;" class="uk-position-fixed uk-position-bottom-right uk-margin-bottom uk-margin-right uk-slidenav-large"></a>
+  <div uk-parallax="opacity: 1,0; viewport: .5; media: @s;" class="uk-section">
     <div class="uk-container uk-container-small uk-text-center uk-flex uk-flex-middle" id="header" uk-height-viewport="offset-top: true; offset-bottom: 10">
       <div>
         <div style="height: 100px;" class="uk-flex uk-flex-middle uk-flex-center">
@@ -51,7 +55,7 @@
           </svg>
           <img class="profile" src="assets/images/profile-pic.png">
         </div>
-  			<h1 class="uk-text-uppercase"><span class="uk-text-bolder">DENNIS</span>CHUNG</h1>
+  			<h1 class="uk-text-uppercase"><span class="uk-text-bolder">DENNIS.</span>CHUNG</h1>
   			<p class="uk-text-large uk-text-light">I am a Product Designer with expertise in visual design and engineering. With a background as a web engineer, I understand how to optimize the product development process by leveraging and clarifying constraints. My design process is rooted in building efficient and visually interesting experiences that solve core user problems.</p>
         <a href="#section-1" class="scroll" uk-scroll="offset: 64;"></a>
 			</div>
@@ -66,53 +70,39 @@
         </div>
         <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s uk-flex-first@s">
           <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
-          <p>CricDuel’s app had begun to gain massive traction in the world of cricket fantasy sports. We enhanced the existing core product and designed new and exciting features.</p>
-          <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+          <p>An extension of a teacher and student classroom application which allows a Parent to see their childs progress in class.</p>
+          <a href="./families.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
     </div>
   </div>
   <!--Kiddom consolidated sign-up-->
-  <div class="uk-section uk-flex uk-flex-middle box-section">
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-2">
     <div class="uk-container uk-container-small">
-      <div class="uk-flex-middle" uk-grid>
-        <div class="uk-width-1-2@m">
-            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/sign-up/sign-up-m.png" alt="Image">
         </div>
-        <div class="uk-width-1-2@m">
-            <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
-            <p>Over the last 3 years the NexTravel product has grown organically based on customer requests and feedback. Our team was tasked to redesign the information architecture and site navigation.</p>
-            <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom Sign-Up</h2>
+          <p>A more distinct and intuitive pathway for a teacher, student and administrator to sign-up.</p>
+          <a href="./sign-up.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
     </div>
   </div>
+
   <!--Cricduel-->
-  <div class="uk-section uk-flex uk-flex-middle box-section">
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-1">
     <div class="uk-container uk-container-small">
-      <div class="uk-flex-middle" uk-grid>
-        <div class="uk-width-1-2@m">
-            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <!-- <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/family/family-product-overview.png" alt="Image"> -->
         </div>
-        <div class="uk-width-1-2@m uk-flex-first@m">
-          <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Next-travel-->
-  <div class="uk-section uk-flex uk-flex-middle box-section">
-    <div class="uk-container uk-container-small">
-      <div class="uk-flex-middle " uk-grid>
-        <div class="uk-width-1-2@m">
-            <img src="https://getuikit.com/docs/images/light.jpg" alt="Image">
-        </div>
-        <div class="uk-width-1-2@m">
-          <h2 class="uk-text-center uk-text-left@s">Kiddom for Families</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s uk-flex-first@s">
+          <h2 class="uk-text-center uk-text-left@s">Cricduel</h2>
+          <p>CricDuel’s app had begun to gain massive traction in the world of cricket fantasy sports. We enhanced the existing core product and designed new and exciting features.</p>
+          <a href=""><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
     </div>
